@@ -163,7 +163,7 @@ class CaixaController extends Controller
         else {
             return response()->json([
                 'success' => "false",
-                'message' => $e->errorInfo[2]
+                'message' => 'Caixa não está aberto ou é inválido.'
             ]);
         }
     return $request->valor;
